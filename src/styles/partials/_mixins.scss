@@ -1,0 +1,16 @@
+@mixin center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin base_input {
+    width: 320px;
+    border: 1px solid #1E989B;
+    height: 40px;
+    border-radius: 7px;
+    color: $text_color_primary;
+    outline-style: none;
+    padding: 0 5px;
+    background-color: $bg_secondary;
+}

@@ -1,0 +1,19 @@
+@import "./partials/reset";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/breakPoints";
+
+
+@import "./components/filter";
+@import "./components/products";
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    @include center;
+    background-color: $bg_primary;
+}
+
+
+
+

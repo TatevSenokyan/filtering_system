@@ -1,0 +1,32 @@
+@media (min-width: map-get($breakpoints, "xs")) {
+    .filter {
+        width: 100%;
+        div {
+            width: 100%
+        }
+    }
+    .products {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (min-width: map-get($breakpoints, "sm")) {
+    .products {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: map-get($breakpoints, "md")) {
+    .filter {
+        width: 400px;
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, "lg")) {
+    .products {
+        grid-template-columns: repeat(3, auto);
+    }
+}
