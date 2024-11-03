@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const useFetchData = (state, dispatch) => {
+export const useFetchData = (state) => {
     const limit = 6;
     const [data, setData] = useState([]);
     const [skipValue, setSkipValue] = useState(state.skip);
