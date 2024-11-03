@@ -16,10 +16,11 @@ export const Input = ({
       <>
          {title && <label>{title}</label>}
          <input 
-           {...value}
-           placeholder={placeholder}
-           type={type}
-        />
+            {...value}
+            data-testid={title || placeholder}
+            placeholder={placeholder}
+            type={type}
+          />
       </>
 
      )

@@ -8,7 +8,7 @@ export const useFetchData = (state, dispatch) => {
     
     useEffect(()=>{
        setLoading(true);
-       fetch("../assets/data.json").then(res=>res.json()).then(res=>{
+       fetch(`http://localhost:3000/assets/data.json`).then(res=>res.json()).then(res=>{
        
             //filter
             res = res.filter((el)=>el.price >= state.filter.price[0] && el.price <= state.filter.price[1]);

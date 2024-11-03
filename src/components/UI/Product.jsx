@@ -1,7 +1,7 @@
 
 export const Product = ({data}) => {
     return (
-        <div>
+        <div data-testid="product">
             <img
                src={data.imageUrl}
             />

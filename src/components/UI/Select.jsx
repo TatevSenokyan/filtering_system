@@ -8,6 +8,7 @@ export const Select = ({initialValue, options, handleChange, title}) => {
         <>
             <label>{title}</label>
             <select
+               data-testid={title}
                {...value}
             >
                 {
