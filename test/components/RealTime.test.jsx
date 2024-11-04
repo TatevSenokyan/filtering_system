@@ -67,8 +67,5 @@ describe("Test Products and Filter", () => {
             //a-z case
             //expect(newDataResult.current.data[index].price).toBeLessThan(newDataResult.current.data[index+1]?.price || Infinity);
         })
-
-        screen.debug();
- 
     })
 })

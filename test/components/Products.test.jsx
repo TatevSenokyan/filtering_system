@@ -16,7 +16,6 @@ describe("Test Products", () => {
 
    it("Test No Products Found text", async () => {
       render(<Products data={[]} loading={false} />)
-      screen.debug()
       const elem = screen.getByText("No Products Found");
       expect(elem).toBeInTheDocument();
    })
@@ -39,8 +38,6 @@ describe("Test Products", () => {
          expect(result.current.data.length).toBeGreaterThan(0);
       });
 
-      console.log("result", result)
-
       render(<Products data={result.current.data} loading={false} />);
 
       expect(screen.getAllByTestId("product")).toHaveLength(6);
@@ -48,8 +45,5 @@ describe("Test Products", () => {
       result.current.data.forEach((product)=>{
          expect(screen.getByText(product.brand)).toBeInTheDocument();
       })
-
-      screen.debug()
-   
    })
 })
